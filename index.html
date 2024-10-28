@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_movil.css">
+    <title>Delicious Bites</title>
+    
+</head>
+
+<body>
+
+<header>
+    <h1>Delicious Bites</h1>
+    <div class="menu-icon" onclick="togglemenu()">
+        <img src="imagenes/1x/menus.png" alt="menu" width="30%">
+    </div> 
+    <div class="logo">
+        <img src="imagenes/1x/cuadroImagenPequeño.png" alt="logo" width="90%">
+    </div>
+</header>
+<!-- menu principal -->
+<nav id="menu">   
+    <a href="#menu">MENU</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#ubicacion">Ubicación</a>
+</nav>
+
+<main>
+    <section>
+        <img src="imagenes/1x/cuadroImagenGrande.png" alt="Imagen grande" width="70%">
+    </section>
+<!-- menu de comida  -->
+    <!-- Comida 1 -->
+    <section>
+        <h2>Menu</h2>
+        <h3>Comida 1</h3>
+        <div class="menuDinamico" onclick="togglemenuDinamico('menuDinamico')">
+            <img src="imagenes/1x/imagenGrandePanel-8.png" alt="panel" width="90%">
+        </div>
+        <nav id="menuDinamico" class="hidden">   
+            <div class="precios">
+                <div>Precio</div>
+                <div>Ingredientes</div>
+            </div>
+            <div class="opcion" data-precio="200" onclick="agregarOpcion(this)"><span class="dinero">$200</span> <span class="nombre">peperoni</span></div>
+            <div class="opcion" data-precio="250" onclick="agregarOpcion(this)"><span class="dinero">$250</span> <span class="nombre">carne</span></div>
+            <div class="opcion" data-precio="300" onclick="agregarOpcion(this)"><span class="dinero">$300</span> <span class="nombre">tres quesos</span></div>
+        </nav>
+    </section>
+   
+
+    <!-- Comida 2 -->
+    <section>
+        <h3>Comida 2</h3>
+        <div class="menuDinamico" onclick="togglemenuDinamico('menuDinamico2')">
+            <img src="imagenes/1x/imagenGrandePanel-8.png" alt="panel" width="90%">
+        </div>
+        <nav id="menuDinamico2" class="hidden">   
+            <div class="precios">
+                <div>Precio</div>
+                <div>Ingredientes</div>
+            </div>
+            <div class="opcion" data-precio="200" onclick="agregarOpcion(this)"><span class="dinero">$200</span> <span class="nombre">peperoni</span></div>
+            <div class="opcion" data-precio="250" onclick="agregarOpcion(this)"><span class="dinero">$250</span> <span class="nombre">carne</span></div>
+            <div class="opcion" data-precio="300" onclick="agregarOpcion(this)"><span class="dinero">$300</span> <span class="nombre">tres quesos</span></div>
+        </nav>
+    </section>
+    
+
+    <!-- Comida 3 -->
+    <section>
+        <h3>Comida 3</h3>
+        <div class="menuDinamico" onclick="togglemenuDinamico('menuDinamico3')">
+            <img src="imagenes/1x/imagenGrandePanel-8.png" alt="panel" width="90%">
+        </div>
+        <nav id="menuDinamico3" class="hidden">   
+            <div class="precios">
+                <div>Precio</div>
+                <div>Ingredientes</div>
+            </div>
+            <div class="opcion" data-precio="200" onclick="agregarOpcion(this)"><span class="dinero">$200</span> <span class="nombre">peperoni</span></div>
+            <div class="opcion" data-precio="250" onclick="agregarOpcion(this)"><span class="dinero">$250</span> <span class="nombre">carne</span></div>
+            <div class="opcion" data-precio="300" onclick="agregarOpcion(this)"><span class="dinero">$300</span> <span class="nombre">tres quesos</span></div>
+    </section>
+    <section>
+    <div id="total" style="margin-top: 20px;">
+        Total: $<span id="totalPrecio">0</span>
+    </div>
+    <button>Pedir</button>
+   </section>
+</main>
+
+
+<!-- quienes somos -->
+
+ <section id="quienes">
+        <h3>Quienes somos</h3>
+        <div>
+            <span class="letrasQuien">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem quod corporis laudantium aliquam 
+                eligendi excepturi laboriosam sint ad. 
+                Voluptatem quibusdam aut quidem officiis. Atque nihil dignissimos obcaecati quam accusantium?</span> <br><br>
+            <span  class="letrasQuien">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores possimus soluta accusamus 
+                ducimus aliquid consequuntur corporis ea vel veniam molestias modi minima,
+                 omnis cupiditate illo molestiae consequatur error voluptates.</span> <br><br>
+        </div>
+       <img src="imagenes/1x/cuadroImagenPequeño.png" alt="imagenes" width="40%" class="ImagenQuien">
+    </section>
+
+
+<!-- ubicacion -->
+
+    <section id="ubicacion">
+        <h3>Ubicación</h3>
+    </head>
+    
+    <div class="cuadro" onclick="toggleLista()">
+        ubicacion
+    </div>
+    
+    <div id="lista" class="oculta">
+        <ul>
+            <li>terminal 1</li>
+            <li>terminal 2</li>
+            <li>terminal 3</li>
+            <li>terminal 4</li>
+           
+        </ul>
+    </div>
+
+   <img src="imagenes/1x/mapa-8.png" alt="mapa" width="100%">
+
+    </section>
+
+
+
+    <footer>
+       <section id="red">
+        <div class="red">contacto</div>
+        <div class="red">legales</div>
+        <div class="red">navegacion</div>
+       </section>
+       <section id="red_social">
+        <div><img src="imagenes/1x/cuadroImagenPequeño.png" alt="imagenes" width="30%"  class="footer_imag"></div>
+        <div><img src="imagenes/1x/cuadroImagenPequeño.png" alt="imagenes" width="30%"  class="footer_imag"></div>
+        <div><img src="imagenes/1x/cuadroImagenPequeño.png" alt="imagenes" width="30%"  class="footer_imag"></div>
+       </section>
+    </footer>
+
+
+
+
+<script>
+    function togglemenuDinamico(id) {
+        const menu = document.getElementById(id);
+        menu.classList.toggle("active"); 
+    }
+
+    function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+    let total = 0;
+
+    function togglemenuDinamico(id) {
+        const menu = document.getElementById(id);
+        menu.classList.toggle("active");
+    }
+
+    function agregarOpcion(element) {
+        const precio = parseInt(element.getAttribute('data-precio'));
+        total += precio;
+
+        // Actualiza el total en la página
+        document.getElementById('totalPrecio').textContent = total;
+
+        // Opcional: puedes agregar lógica para deshabilitar o marcar como seleccionada la opción
+        element.classList.toggle('seleccionada'); // Agrega una clase si lo deseas
+    }
+
+    function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+
+
+    function toggleLista() {
+    const lista = document.getElementById("lista");
+    lista.classList.toggle("oculta");
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
